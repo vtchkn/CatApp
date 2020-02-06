@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="image_height">320dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+</resources>

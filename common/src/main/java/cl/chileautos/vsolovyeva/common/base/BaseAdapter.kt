@@ -3,7 +3,7 @@ package cl.chileautos.vsolovyeva.common.base
 
 
 import androidx.recyclerview.widget.RecyclerView
-import java.util.ArrayList
+import java.util.*
 
 abstract class BaseAdapter<T, VH : BaseViewHolder<T>> : RecyclerView.Adapter<VH>() {
     private var items: List<T> = ArrayList()

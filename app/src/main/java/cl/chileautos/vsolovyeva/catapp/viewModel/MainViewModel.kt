@@ -2,8 +2,8 @@ package cl.chileautos.vsolovyeva.catapp.viewModel
 
 import android.app.Application
 import androidx.lifecycle.*
-import cl.chileautos.vsolovyeva.data.model.TheCatImage
 import cl.chileautos.vsolovyeva.catapp.app.App
+import cl.chileautos.vsolovyeva.data.model.TheCatImage
 import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {

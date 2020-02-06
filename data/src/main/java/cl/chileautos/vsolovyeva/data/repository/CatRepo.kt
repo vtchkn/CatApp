@@ -1,13 +1,12 @@
 package cl.chileautos.vsolovyeva.data.repository
 
 
-import cl.chileautos.vsolovyeva.data.model.TheCatImage
 import cl.chileautos.vsolovyeva.data.api.TheCatApiService
 import cl.chileautos.vsolovyeva.data.model.Resource
 import cl.chileautos.vsolovyeva.data.model.Status
+import cl.chileautos.vsolovyeva.data.model.TheCatImage
 import retrofit2.Response
 import java.io.IOException
-import java.util.HashMap
 
 class CatRepo(private val api: TheCatApiService, private val apiKey: String) {
 

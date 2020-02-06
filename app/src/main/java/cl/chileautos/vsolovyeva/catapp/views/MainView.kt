@@ -3,15 +3,12 @@ package cl.chileautos.vsolovyeva.catapp.views
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.ViewModelProvider
 import cl.chileautos.vsolovyeva.catapp.MainActivity
-import cl.chileautos.vsolovyeva.catapp.viewModel.MainViewModel
 import cl.chileautos.vsolovyeva.catapp.R
-import cl.chileautos.vsolovyeva.common.base.BaseAdapter
+import cl.chileautos.vsolovyeva.catapp.viewModel.MainViewModel
 import cl.chileautos.vsolovyeva.common.base.BaseItemDecoration
-import cl.chileautos.vsolovyeva.common.base.BaseViewHolder
 import cl.chileautos.vsolovyeva.data.model.TheCatImage
 import kotlinx.android.synthetic.main.main_view.view.*
 
@@ -47,17 +44,3 @@ class MainView(context: Context?, attrs: AttributeSet?) : ConstraintLayout(conte
 
 }
 
-class TheCatImageAdapter : BaseAdapter<TheCatImage, BaseViewHolder<TheCatImage>>() {
-    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): BaseViewHolder<TheCatImage> {
-        return object : BaseViewHolder<TheCatImage>(
-            CatImageView(
-                viewGroup.context,
-                null
-            )
-        ) {
-            override fun bind(item: TheCatImage) {
-                (itemView as CatImageView).bind(item)
-            }
-        }
-    }
-}
